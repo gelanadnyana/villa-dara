@@ -1,0 +1,188 @@
+/* Halaman Contact */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.slideimg img{
+    height: 538px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+nav {
+    background: linear-gradient(to bottom, #fff, transparent);
+
+}
+.navbar{
+    position: absolute;
+    height: 100px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+.navbar-brand{
+    font-weight: 700;
+    color: black;
+}
+.btn{
+    color: #fff;
+    background-color: #db0007;
+    margin-right: 100px;
+    border-color: #d30007;
+    box-shadow: 0 0.75rem 1.5rem -0.5rem rgb(219 0 7 / 30%);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.btn:hover{
+    background-color: #c50107;
+    border-color: #b5060c;
+}
+.nav-item:after{
+    content: '';
+    transform: scale(0);
+    display: block;
+    padding-bottom: 0,5rem;
+    border-bottom: 0.1rem solid #b5060c;
+    transition: .5s;
+}
+.nav-item:hover::after{
+    transform: scale(1);
+}
+.lio a:hover{
+    color: #b5060c;
+}
+.lio .lie{
+    font-weight: 500;
+}
+.navbar{
+    background-color: transparent;
+    position: fixed;
+}
+.bg-white{
+    background-color: white !important;
+    transition: 0.5s !important;
+
+}
+.content{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+}
+/* Section 2 Contact*/
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.judul h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.kolom1 input{
+    border: 1px solid #a9a9a9;
+}
+input::placeholder{
+    padding-left: 20px;
+}
+.kolom2 input{
+    border: 1px solid #a9a9a9;
+}
+.kolom3 select option{
+    border-radius: 1px solid #a9a9a9;
+}
+textarea {
+    padding-left: 20px;
+    color: #a9a9a9;
+}
+button img {
+    transform: rotate(270deg);
+}
+.button2{
+    width: 180px;
+    height: 40px;
+    border: none;
+}
+.button2 img{
+    color: #fff;
+    margin-right: 10px;
+}
+.maps-area iframe{
+    width: 1000px;
+    height: 400px;
+}
+/* footer */
+.booknow  button{
+    transform: translateX(1000px);
+    border-radius: 30px;
+    right: 190px;
+    border: none;
+}
+.booknow{
+    position: fixed;
+    display: flex;
+    right: 1%;
+    width: 150px;
+    height: 45px;
+    z-index: 222px;
+    bottom: 0;
+    border-radius: 20px;
+    border:none;
+}
+.booknow img{
+    width: 50px;
+    height: 45px;
+    padding-right: 5px;
+    transform: rotate(360deg);
+}
+.booknow a{
+    text-decoration: none;
+    color: #556b2f;
+}
+.booknow a:hover{
+    color: #8fbc8f;
+    transition: 0.5s;
+}
+footer{
+    padding: 10em 0px;
+}
+.wrapper-col-1 img{
+    width: 250px;
+    height: 200px;
+}
+.wrapper-col-1 p{
+    font-size: 14px;
+    width: 90%;
+    padding-top: 50px;
+}
+
+.col-2{
+    margin-top: 30px;
+    margin-right: 60px;
+}
+/* gallery responsive */
+@media only screen and(max-width:900px){
+    .tab-pane #all-tab-pane{
+        width: 2%;
+    }
+}
+@media only screen and(max-width: 767px) {
+    .countainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .countainer img {
+      width: 100%;
+      height: auto;
+      margin: 5px;
+    }
+  }
+  
