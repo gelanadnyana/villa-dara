@@ -7,11 +7,11 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
 }
-
-.slideimg img{
+.slide-img img{
     height: 538px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    box-shadow: rgba(0, 0, 0.35) 0px -50px 36px -28px inset;
 }
+/* awal navbar */
 nav {
     background: linear-gradient(to bottom, #fff, transparent);
 
@@ -65,59 +65,24 @@ nav {
 .bg-white{
     background-color: white !important;
     transition: 0.5s !important;
-
 }
+/*  akhir navbar  */
+
+
+/* awal content */
 .content{
     position: absolute;
     top: 200px;
     left: 0;
     right: 0;
 }
-/* Section 2 Contact*/
-.container-fluid{
+.cntainr{
     margin: 0;
     padding: 0;
 }
-.judul h2{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.logo img{
-    width: 40px;
-    height: 40px;
-}
-.kolom1 input{
-    border: 1px solid #a9a9a9;
-}
-input::placeholder{
-    padding-left: 20px;
-}
-.kolom2 input{
-    border: 1px solid #a9a9a9;
-}
-.kolom3 select option{
-    border-radius: 1px solid #a9a9a9;
-}
-textarea {
-    padding-left: 20px;
-    color: #a9a9a9;
-}
-button img {
-    transform: rotate(270deg);
-}
-.button2{
-    width: 180px;
-    height: 40px;
-    border: none;
-}
-.button2 img{
-    color: #fff;
-    margin-right: 10px;
-}
-.maps-area iframe{
-    width: 1000px;
-    height: 400px;
-}
-/* footer */
+/* akhir content */
+
+/* awal  book now */
 .booknow  button{
     transform: translateX(1000px);
     border-radius: 30px;
@@ -149,34 +114,28 @@ button img {
     color: #8fbc8f;
     transition: 0.5s;
 }
-footer{
-    padding: 10em 0px;
-}
-.wrapper-col-1 img{
-    width: 250px;
-    height: 200px;
-}
-.wrapper-col-1 p{
-    font-size: 14px;
-    width: 90%;
-    padding-top: 50px;
-}
+/* akhir book now */
+/* Gallery */
 
-.col-2{
-    margin-top: 30px;
-    margin-right: 60px;
-}
+
+
 /* gallery responsive */
-@media only screen and(max-width:900px){
-    .tab-pane #all-tab-pane{
+@media only screen and (max-width: 1190px){
+    .gllry img{
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:900px){
+    .panel-tab #all-page{
         width: 2%;
     }
 }
-@media only screen and(max-width: 767px) {
+@media only screen and (max-width: 600px) {
     .countainer {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
     }
   
     .countainer img {
@@ -184,5 +143,15 @@ footer{
       height: auto;
       margin: 5px;
     }
+    .gelan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gelan .gllry{
+        width: 110%;
+        margin: auto;
+    }
   }
+  /* akhir gallery */
   
